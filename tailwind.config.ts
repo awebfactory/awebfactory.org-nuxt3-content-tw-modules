@@ -1,5 +1,4 @@
 import defaultTheme from "tailwindcss/defaultTheme"
-import tailwindTypography from "@tailwindcss/typography"
 
 export default {
   theme: {
