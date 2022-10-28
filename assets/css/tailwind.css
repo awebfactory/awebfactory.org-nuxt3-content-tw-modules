@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  header {
+    @apply m-auto p-4;
+  }
+  main {
+    @apply m-auto p-4 md:max-w-7xl lg:max-w-full lg:px-36;
+  }
+  h1 {
+    @apply m-auto font-header font-medium text-4xl text-potters-clay-600;
+  }
+  h2 {
+    @apply m-auto font-header font-medium text-3xl text-potters-clay-600;
+  }
+  h3 {
+    @apply font-header font-medium text-2xl text-wild-willow-400;
+  }
+  p {
+    @apply font-content font-normal text-base leading-snug text-slate-500;
+  }
+  .link-card-grid {
+    @apply grid gap-4 mt-4 pt-2;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+  }
+}
+
+@layer components {
+  .link-card {
+    @apply flex p-[0.15rem];
+  }
+  .link-card a {
+    @apply px-5 py-4 w-full leading-5 rounded-md decoration-0 bg-white opacity-80 text-slate-500 border-2 border-solid border-texas-rose-200;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Crete Round";
+    src: url("/fonts/creteround/CreteRound-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "PT Sans";
+    src: url("/fonts/ptsans/PT_Sans-Web-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+}

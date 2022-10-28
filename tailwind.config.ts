@@ -12,6 +12,11 @@ export default {
   plugins: [require("@tailwindcss/typography")],
   theme: {
     extend: {
+      fontFamily: {
+        header: "Crete Round, Geneva, Arial, Helvetica, sans-serif",
+        "sub-header": "PT Sans, Verdana, Arial, Helvetica, sans-serif",
+        content: "PT Sans, Verdana, Arial, Helvetica, sans-serif",
+      },
       colors: {
         "potters-clay": {
           50: "#f9f6ed",
