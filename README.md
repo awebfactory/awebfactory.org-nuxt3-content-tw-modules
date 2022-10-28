@@ -1,42 +1,17 @@
-# Content v2 Minimal Starter
+# `#BuildInPublic` and `#LearnInPublic` Repo for AWebFactory.org
 
-Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
+## Project Flow & Tracker
 
-## Setup
+Repo for awebfactory.org: web application factory pattern - workspaces for web
+application process #BuildInPublic #LearnInPublic open projects soon to be on
+view and in action
 
-Make sure to install the dependencies:
+## Built using
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+- [Nuxt 3](https://github.com/nuxt/framework)
+- [Vue 3](https://github.com/vuejs/core)
+- [TypeScript](https://github.com/microsoft/TypeScript).
+- [TailwindCSS](https://tailwindcss.com/)
+- [Markdown](https://daringfireball.net/projects/markdown/)
+- [Nuxt Tailwind module](https://tailwindcss.nuxtjs.org/)
+- [Nuxt Content module](https://content.nuxtjs.org/), including [Nuxt Markdown Components](https://content.nuxtjs.org/guide/writing/mdc/)
