@@ -1,11 +1,11 @@
 /*
+  awf-light-green    "wild-willow-400"
+  awf-light-orange   "texas-rose-300"
+  awf-light-brown    "potters-clay-300"
   awf-dark-brown     "potters-clay-600"
-  awf-light-green      "wild-willow-400"
-    awf-dark-green      "limeade-400"
-  awf-light-orange      "texas-rose-300"
-  awf-dark-green      "limeade-700"
-  awf-dark-orange      "texas-rose-500"
-    awf-dark-orange      "orange-peel-500"
+  awf-dark-green     "limeade-700"
+  awf-dark-orange    "texas-rose-500"
+    awf-dark-orange    "orange-peel-500"
 */
 
 export default {
@@ -18,6 +18,13 @@ export default {
         content: "PT Sans, Verdana, Arial, Helvetica, sans-serif",
       },
       colors: {
+        "awf-light-green": "#99cc66",
+        "awf-light-orange": "#fdbd50",
+        "awf-light-brown": "#d1b173",
+        "awf-dark-green": "#669900",
+        "awf-dark-orange": "#ff9900",
+        "awf-dark-brown": "#996633",
+        "awf-bright-orange": "#f67e0a",
         "potters-clay": {
           50: "#f9f6ed",
           100: "#f0e8d1",
