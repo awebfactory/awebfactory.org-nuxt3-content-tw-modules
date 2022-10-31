@@ -1,6 +1,8 @@
 <script setup>
-const thepage = queryContent("/about").findOne()
-console.log(thepage)
+const { path } = useRoute()
+const { data } = await useAsyncData(`content-${path}`, () => {
+  return queryContent().where({ _path: path }).only(["title"]).findOne()
+})
 </script>
 
 <template>
@@ -11,6 +13,6 @@ console.log(thepage)
     <p class="text-awf-dark-green font-bold">here3</p>
     <p class="text-awf-dark-orange font-extrabold">here4</p>
     <ContentDoc />
-    <pre>{{ thepage }}</pre>
+    <pre>{{ data.title }}</pre>
   </main>
 </template>
