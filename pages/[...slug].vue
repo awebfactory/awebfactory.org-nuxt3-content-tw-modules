@@ -1,3 +1,8 @@
+<script setup>
+const thepage = queryContent("/about").findOne()
+console.log(thepage)
+</script>
+
 <template>
   <main>
     <h2 class="text-awf-dark-brown">AWF org</h2>
@@ -6,5 +11,6 @@
     <p class="text-awf-dark-green font-bold">here3</p>
     <p class="text-awf-dark-orange font-extrabold">here4</p>
     <ContentDoc />
+    <pre>{{ thepage }}</pre>
   </main>
 </template>
