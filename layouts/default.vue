@@ -1,6 +1,6 @@
 <template>
   <div>
-    Some default layout shared across all pages
+    <GeneralHeader />
     <slot />
   </div>
 </template>
