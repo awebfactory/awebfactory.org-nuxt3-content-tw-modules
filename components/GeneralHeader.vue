@@ -1,12 +1,21 @@
 <script setup>
-import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue"
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+} from "@headlessui/vue"
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline"
 
+// TODO active not working with NavLink or href
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
+  { name: "Projects", to: "/projects", active: false },
+  { name: "Process", to: "/process", active: false },
+  { name: "Resources", to: "/resources", active: false },
+  { name: "About", to: "/about", active: false },
 ]
 </script>
 <template>
@@ -27,31 +36,33 @@ const navigation = [
           class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
         >
           <div class="flex flex-shrink-0 items-center">
-            <img
-              class="block h-12 w-auto lg:hidden"
-              src="/logo.png"
-              alt="Your Company"
-            />
-            <img
-              class="hidden h-12 w-auto lg:block"
-              src="/logo.png"
-              alt="Your Company"
-            />
+            <NuxtLink to="/">
+              <img
+                class="block h-12 w-auto lg:hidden"
+                src="/logo.png"
+                alt="Your Company"
+              />
+              <img
+                class="hidden h-12 w-auto lg:block"
+                src="/logo.png"
+                alt="Your Company"
+              />
+            </NuxtLink>
           </div>
           <div class="hidden sm:mx-auto sm:mt-2 sm:block">
             <div class="flex space-x-4 justify-end">
-              <a
+              <NuxtLink
                 v-for="item in navigation"
                 :key="item.name"
-                :href="item.href"
+                :to="item.to"
                 :class="[
-                  item.current
+                  item.active
                     ? 'bg-gray-900 text-white'
                     : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                   'px-3 py-2 rounded-md text-sm font-medium',
                 ]"
-                :aria-current="item.current ? 'page' : undefined"
-                >{{ item.name }}</a
+                :aria-active="item.active ? 'page' : undefined"
+                >{{ item.name }}</NuxtLink
               >
             </div>
           </div>
@@ -65,17 +76,28 @@ const navigation = [
           v-for="item in navigation"
           :key="item.name"
           as="a"
-          :href="item.href"
+          :to="item.to"
           :class="[
-            item.current
+            item.active
               ? 'bg-gray-900 text-white'
               : 'text-gray-300 hover:bg-gray-700 hover:text-white',
             'block px-3 py-2 rounded-md text-base font-medium',
           ]"
-          :aria-current="item.current ? 'page' : undefined"
+          :aria-active="item.router - link - active ? 'page' : undefined"
           >{{ item.name }}</DisclosureButton
         >
       </div>
     </DisclosurePanel>
   </Disclosure>
 </template>
+
+<style>
+a {
+  color: #d1d5db;
+  background-color: transparent;
+}
+a.router-link-active {
+  color: white;
+  background-color: #111827;
+}
+</style>
