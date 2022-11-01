@@ -27,8 +27,8 @@
               alt="Your Company"
             />
           </div>
-          <div class="hidden sm:ml-6 sm:block">
-            <div class="flex space-x-4">
+          <div class="hidden sm:ml-12 sm:mt-2 sm:block">
+            <div class="flex space-x-4 justify-end">
               <a
                 v-for="item in navigation"
                 :key="item.name"
