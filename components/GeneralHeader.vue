@@ -18,13 +18,13 @@ const navigation = [
 ]
 </script>
 <template>
-  <Disclosure as="nav" class="bg-gray-800" v-slot="{ open }">
+  <Disclosure as="nav" class="bg-texas-rose-50" v-slot="{ open }">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
           <DisclosureButton
-            class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            class="inline-flex items-center justify-center rounded-md p-2 text-awf-dark-orange hover:bg-awf-dark-orange hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
           >
             <span class="sr-only">Open main menu</span>
             <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
@@ -57,7 +57,7 @@ const navigation = [
                 :class="[
                   item.active
                     ? 'bg-gray-900 text-white'
-                    : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    : 'text-awf-dark-orange hover:bg-awf-dark-orange hover:text-white',
                   'px-3 py-2 rounded-md text-sm font-medium',
                 ]"
                 :aria-active="item.active ? 'page' : undefined"
@@ -79,7 +79,7 @@ const navigation = [
           :class="[
             item.active
               ? 'bg-gray-900 text-white'
-              : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+              : 'text-awf-dark-orange hover:bg-awf-dark-orange hover:text-white',
             'block px-3 py-2 rounded-md text-base font-medium',
           ]"
           :aria-active="item.router - link - active ? 'page' : undefined"
@@ -92,11 +92,20 @@ const navigation = [
 
 <style>
 a {
-  color: #d1d5db;
+  color: #996633;
   background-color: transparent;
 }
 a.router-link-active {
   color: white;
-  background-color: #111827;
+  background-color: #996633;
+}
+a img {
+  color: #f0e8d1;
+  background-color: #fff8eb;
+}
+a.router-link-active img {
+  color: white;
+  background-color: #f0e8d1;
+  padding: 2px;
 }
 </style>
