@@ -8,7 +8,7 @@ import {
   MenuItem,
   MenuItems,
 } from "@headlessui/vue"
-import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline"
+import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline/index.js"
 
 const navigation = [
   { name: "Projects", to: "/projects" },
