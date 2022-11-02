@@ -18,7 +18,7 @@ const navigation = [
 ]
 </script>
 <template>
-  <Disclosure as="nav" class="bg-texas-rose-50" v-slot="{ open }">
+  <Disclosure as="nav" class="bg-texas-rose-50 shadow" v-slot="{ open }">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div class="relative flex h-16 items-center justify-between">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -91,7 +91,7 @@ const navigation = [
   </Disclosure>
 </template>
 
-<style>
+<style scoped>
 a {
   color: #996633;
   background-color: transparent;
