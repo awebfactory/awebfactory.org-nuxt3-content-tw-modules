@@ -10,12 +10,11 @@ import {
 } from "@headlessui/vue"
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline"
 
-// TODO active not working with NavLink or href
 const navigation = [
-  { name: "Projects", to: "/projects", active: false },
-  { name: "Process", to: "/process", active: false },
-  { name: "Resources", to: "/resources", active: false },
-  { name: "About", to: "/about", active: false },
+  { name: "Projects", to: "/projects" },
+  { name: "Process", to: "/process" },
+  { name: "Resources", to: "/resources" },
+  { name: "About", to: "/about" },
 ]
 </script>
 <template>
