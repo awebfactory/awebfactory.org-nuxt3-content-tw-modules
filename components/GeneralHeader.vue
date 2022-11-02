@@ -56,7 +56,7 @@ const navigation = [
                 :to="item.to"
                 :class="[
                   item.active
-                    ? 'bg-gray-900 text-white'
+                    ? 'bg-awf-dark-brown text-white'
                     : 'text-awf-dark-orange hover:bg-awf-dark-orange hover:text-white',
                   'px-3 py-2 rounded-md text-sm font-medium',
                 ]"
@@ -71,20 +71,21 @@ const navigation = [
 
     <DisclosurePanel class="sm:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3">
-        <DisclosureButton
-          v-for="item in navigation"
-          :key="item.name"
-          as="a"
-          :to="item.to"
-          :class="[
-            item.active
-              ? 'bg-gray-900 text-white'
-              : 'text-awf-dark-orange hover:bg-awf-dark-orange hover:text-white',
-            'block px-3 py-2 rounded-md text-base font-medium',
-          ]"
-          :aria-active="item.router - link - active ? 'page' : undefined"
-          >{{ item.name }}</DisclosureButton
-        >
+        <DisclosureButton>
+          <NuxtLink
+            v-for="item in navigation"
+            :key="item.name"
+            :to="item.to"
+            :class="[
+              item.active
+                ? 'bg-awf-dark-brown text-white'
+                : 'text-awf-dark-orange hover:bg-awf-dark-orange hover:text-white',
+              'block px-3 py-2 rounded-md text-base font-medium',
+            ]"
+            :aria-active="item.active ? 'page' : undefined"
+            >{{ item.name }}</NuxtLink
+          >
+        </DisclosureButton>
       </div>
     </DisclosurePanel>
   </Disclosure>
