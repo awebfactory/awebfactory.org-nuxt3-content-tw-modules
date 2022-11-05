@@ -1,22 +1,3 @@
-<script setup>
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
-} from "@headlessui/vue"
-import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline/index.js"
-
-const navigation = [
-  { name: "Projects", to: "/projects" },
-  { name: "Process", to: "/process" },
-  { name: "Resources", to: "/resources" },
-  { name: "About", to: "/about" },
-]
-</script>
 <template>
   <Disclosure as="nav" class="bg-texas-rose-50 shadow" v-slot="{ open }">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -90,6 +71,26 @@ const navigation = [
     </DisclosurePanel>
   </Disclosure>
 </template>
+
+<script setup>
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+} from "@headlessui/vue"
+import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline/index.js"
+
+const navigation = [
+  { name: "Projects", to: "/projects" },
+  { name: "Process", to: "/process" },
+  { name: "Resources", to: "/resources" },
+  { name: "About", to: "/about" },
+]
+</script>
 
 <style scoped>
 a {

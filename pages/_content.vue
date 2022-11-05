@@ -1,3 +1,10 @@
+<template>
+  <main>
+    <h2 class="text-awf-dark-brown">Content Model</h2>
+    <pre>{{ data }}</pre>
+  </main>
+</template>
+
 <script setup>
 const { data } = await useAsyncData(() => {
   // return queryContent().findOne()
@@ -6,10 +13,3 @@ const { data } = await useAsyncData(() => {
 })
 // console.log(data)
 </script>
-
-<template>
-  <main>
-    <h2 class="text-awf-dark-brown">Content Model</h2>
-    <pre>{{ data }}</pre>
-  </main>
-</template>
