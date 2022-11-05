@@ -48,14 +48,13 @@
         </div>
       </div>
       <p class="mt-8 text-center text-base text-gray-399">
-        &copy; 2006-{{ new Date().getFullYear() }} authored by Victor Kane
-        CC-BY-SA (unless otherwise stated) Creative Commons
+        &copy; 2006-{{ new Date().getFullYear() }} Victor Kane CC-BY-SA 4.0
         <NuxtLink
           to="https://creativecommons.org/licenses/by-sa/4.0/"
-          class="ek-link"
+          class="ek-link text-awf-dark-green hover:text-awf-dark-orange"
           >Attribution-ShareAlike 4.0 International License</NuxtLink
         >
-        reserved.
+        (unless otherwise stated)
       </p>
     </div>
   </footer>
