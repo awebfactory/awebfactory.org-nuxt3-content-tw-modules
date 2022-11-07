@@ -1,1 +1,0 @@
-# Praxispoetica indie publishing platform

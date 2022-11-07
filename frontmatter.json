@@ -44,17 +44,117 @@
           "type": "categories"
         }
       ]
+    },
+    {
+      "name": "project",
+      "pageBundle": false,
+      "previewPath": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "title": "Start date",
+          "name": "startDate",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": false
+        },
+        {
+          "title": "End date",
+          "name": "endDate",
+          "type": "datetime"
+        },
+        {
+          "title": "Content preview",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Current MVP",
+          "name": "mvp",
+          "type": "choice",
+          "choices": ["mvp01", "mvp02", "mvp03"]
+        },
+        {
+          "title": "Status",
+          "name": "status",
+          "type": "choice",
+          "choices": [
+            "in planning",
+            "kicked off",
+            "mvp in progress",
+            "mvp01 completed",
+            "mvp02 completed",
+            "mvp03 completed"
+          ]
+        },
+        {
+          "title": "Repo",
+          "name": "repo",
+          "type": "string"
+        },
+        {
+          "title": "Labels",
+          "name": "labels",
+          "type": "choice",
+          "choices": [
+            "Product",
+            "UX",
+            "Front end",
+            "Back end",
+            "DevOps",
+            "Process",
+            "Graphic Design"
+          ]
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "type",
+          "name": "type",
+          "type": "string"
+        }
+      ]
     }
   ],
   "frontMatter.framework.id": "nuxt",
-  "frontMatter.content.publicFolder": "static",
+  "frontMatter.content.publicFolder": "public",
   "frontMatter.content.pageFolders": [
     {
-      "title": "content",
-      "path": "[[workspace]]/content"
+      "title": "Pages",
+      "path": "[[workspace]]/content",
+      "excludeSubdir": true
     },
     {
-      "title": "projects",
+      "title": "Projects",
       "path": "[[workspace]]/content/projects"
     }
   ],
