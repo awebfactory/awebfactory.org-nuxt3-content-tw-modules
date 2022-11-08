@@ -16,6 +16,7 @@ labels: UX
 tags: ""
 categories: ""
 type: project
+slug: project-flow-tracker
 ---
 
 AWebFactory.org will continue the Project Flow & Tracker project, and build on the app as a community resource as a #BuildInPublic and #LearnInPublic open resource and based on an ongoing Lean/UX and Agile process of adding value, prototyping, and testing with ongoing MVP pivoting and extensibility

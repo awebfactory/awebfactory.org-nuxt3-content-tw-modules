@@ -13,6 +13,7 @@ labels: ""
 tags: ""
 categories: ""
 type: project
+slug: victor-kane-writers-website
 ---
 
 Subscriber-encouraged online access to Victor Kane's collected works, including paid options to download all works in various formats (pdf, epub, etc.)
