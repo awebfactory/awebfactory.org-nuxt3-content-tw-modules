@@ -39,7 +39,7 @@
       >
         <div className="flex flex-1 flex-col justify-between bg-white p-6">
           <div class="flex-1">
-            <NuxtLink :to="`/project/${project.slug}`" className="mt-2 block">
+            <NuxtLink :to="`/projects/${project.slug}`" className="mt-2 block">
               <p
                 className="text-xl font-semibold text-orange-peel-800 hover:text-wild-willow-400"
               >
