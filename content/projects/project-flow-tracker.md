@@ -1,7 +1,7 @@
 ---
 title: Project Flow & Tracker
-description:
-  "Platform serving Project Flow & Tracker, a LeanUX/Agile non-silo team based
+description: "Platform serving Project Flow & Tracker on
+  [AWebfactory.org](https://awebfactory.org), a LeanUX/Agile non-silo team based
   tool for #BuildInPublic #LearnInPublic jamstack and fullstack web app
   projects"
 date: 2022-11-30T18:14:40.000Z
@@ -17,3 +17,5 @@ tags: ""
 categories: ""
 type: project
 ---
+
+AWebFactory.org will continue the Project Flow & Tracker project, and build on the app as a community resource as a #BuildInPublic and #LearnInPublic open resource and based on an ongoing Lean/UX and Agile process of adding value, prototyping, and testing with ongoing MVP pivoting and extensibility
