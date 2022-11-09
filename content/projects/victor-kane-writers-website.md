@@ -16,4 +16,8 @@ type: project
 slug: victor-kane-writers-website
 ---
 
-Subscriber-encouraged online access to Victor Kane's collected works, including paid options to download all works in various formats (pdf, epub, etc.)
+Subscriber-encouraged online access to Victor Kane's [collected works](https://victorkane.com). <!--more--> including paid options to download all works in various formats (pdf, epub, etc.)
+
+```js
+const t = 1
+```
