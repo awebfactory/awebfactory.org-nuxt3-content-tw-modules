@@ -8,8 +8,8 @@ startDate: 2022-11-08T10:39:34.458Z
 endDate: ""
 preview: ""
 draft: true
-mvp: ""
-status: ""
+mvp: mvp02
+status: in planning
 repo: ""
 labels: ""
 tags: ""
