@@ -21,6 +21,12 @@
   p {
     @apply font-content font-normal text-base leading-snug text-slate-500;
   }
+  p a {
+    @apply font-content font-normal text-base leading-snug text-wild-willow-400 hover:text-texas-rose-500;
+  }
+  ul li a {
+    @apply font-content font-normal text-base leading-snug text-wild-willow-400 hover:text-texas-rose-500;
+  }
   .link-card-grid {
     @apply grid gap-4 mt-4 pt-2;
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
