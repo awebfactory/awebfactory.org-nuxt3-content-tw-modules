@@ -21,6 +21,9 @@
   p {
     @apply font-content font-normal text-base leading-snug text-slate-500;
   }
+  ul li {
+    @apply font-content font-normal text-base leading-snug text-slate-500;
+  }
   p a {
     @apply font-content font-normal text-base leading-snug text-wild-willow-400 hover:text-texas-rose-500;
   }
