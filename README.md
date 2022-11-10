@@ -15,3 +15,4 @@ view and in action
 - [Markdown](https://daringfireball.net/projects/markdown/)
 - [Nuxt Tailwind module](https://tailwindcss.nuxtjs.org/)
 - [Nuxt Content module](https://content.nuxtjs.org/), including [Nuxt Markdown Components](https://content.nuxtjs.org/guide/writing/mdc/)
+- [Front Matter Headless CMS running in VS Code](https://frontmatter.codes/) for content modeling, creation and editing
