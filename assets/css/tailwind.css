@@ -18,6 +18,9 @@
   h3 {
     @apply font-header font-medium text-2xl text-wild-willow-400;
   }
+  h4 {
+    @apply font-header font-medium text-xl text-wild-willow-400;
+  }
   p {
     @apply font-content font-normal text-base leading-snug text-slate-500;
   }
